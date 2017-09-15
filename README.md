@@ -27,12 +27,16 @@ A quick run-through of what's happening:
 - `tachyons-css` contains a lot of code like this:
 
 ```js
+import * as typestyle from 'typestyle';
+/*
+    Changing this to
+        import {style, media} from 'typestyle
+    doesn't change anything
+*/
+
 export const html = typestyle.style({/*...*/})
-
 export const body = typestyle.style({/*...*/})
-
 /*...*/
-
 export const bordercolorBlack40 = typestyle.style({/*...*/})
 export const flexNone = typestyle.style({/*...*/})
 
@@ -41,6 +45,11 @@ export const flexNone = typestyle.style({/*...*/})
 - `index` imports only a couple of these constants:
 
 ```typescript
+import * as React from 'react'
+import { classes } from 'typestyle'
+import { f1, measure } from './tachyons-css'
+
+
 const App = () => {
   return <div className={classes(f1, measure)}>Hello</div>
 }
