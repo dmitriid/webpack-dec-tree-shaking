@@ -1,0 +1,32 @@
+{
+  "name": "webpack-dec-tree-shaking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -p ./tsconfig.json",
+    "webpack": "webpack --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriid/webpack-dec-tree-shaking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriid/webpack-dec-tree-shaking/issues"
+  },
+  "homepage": "https://github.com/dmitriid/webpack-dec-tree-shaking#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "typestyle": "^1.4.1"
+  }
+}
