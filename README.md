@@ -1,5 +1,7 @@
 # webpack-dec-tree-shaking
 
+The issue in this repo has apparently been around for some time: https://github.com/webpack/webpack/issues/4784
+
 *Note:* The original code is in Typescript, *but* webpack is instructed to work 
 with the `compiled/` code. The compiled code is ES6 modules.
 
